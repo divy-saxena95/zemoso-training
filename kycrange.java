@@ -61,7 +61,7 @@ public static void main(String [] args)
         String s=null;
         System.out.println("Enter signup date and current date in \'dd-mm-yyyy\' dateform separated by space");
         s=br.readLine();
-        //if(s.matches("^\\d+\\-\\d+\\-\\d+[ ]+\\d+\\-\\d+\\-\\d+$")) {
+        
             String[] dates = s.split(" ");
             kycrange form = new kycrange(dates[0], dates[1]);
             if (form.validity()) {
@@ -71,8 +71,7 @@ public static void main(String [] args)
                 System.out.println("You cannot file the KYC for the given dates");
             }
         }
-        //else
-           // System.out.println("Enter date in correct format.");
+        
     }
 
 
